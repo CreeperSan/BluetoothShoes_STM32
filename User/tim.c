@@ -16,7 +16,7 @@ void initTimTwinkle()//这个是于闪烁的定时器(车灯闪烁、蜂鸣器间断鸣起)
 	nvicDef.NVIC_IRQChannelSubPriority = 0;
 	NVIC_Init(&nvicDef);
 	
-	timDef.TIM_Period = 1000;//周期
+	timDef.TIM_Period = 100;//周期
 	timDef.TIM_Prescaler = 44999;//分频系数
 	TIM_TimeBaseInit(TIM6,&timDef);
 	TIM_ClearFlag(TIM6,TIM_FLAG_Update);

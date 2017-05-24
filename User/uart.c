@@ -1,6 +1,7 @@
 
 #include "stm32f4xx.h"
 #include "uart.h"
+#include <stdio.h>
 
 void initUSART1()
 {
@@ -60,7 +61,17 @@ void usart1SendString(char *dat)
 	}
 	while(USART_GetFlagStatus(USART1,USART_FLAG_TC) == RESET );
 }
-
+//重定向rpintf()
+int fputc(int ch, FILE *f)
+{
+		/* 发送一个字节数据到串口 */
+		USART_SendData(USART1, (uint8_t) ch);
+		
+		/* 等待发送完毕 */
+		while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);		
+	
+		return (ch);
+}
 
 
 

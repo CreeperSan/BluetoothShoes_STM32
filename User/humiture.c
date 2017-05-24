@@ -47,13 +47,14 @@ bool readHumiture(unsigned char humitureDat[5])//读取并赋值到数据
 		tempCount = 0;
 		while( getHumiturePinStatus() == 0){
 			tempCount++;
-			if(tempCount>100)return false;
+			if(tempCount>100){	; return false;}
 			delay_us(10);
 		}
 	}else{
+		usart1SendByte('-');
 		return false;
 	}
-	usart1SendByte('*');
+//	usart1SendByte('*');
 	//检测是否有40-50us的拉高信号，如果没有则跳出循环
 	tempCount = 0;
 	while( getHumiturePinStatus() == 1 ){
@@ -62,7 +63,7 @@ bool readHumiture(unsigned char humitureDat[5])//读取并赋值到数据
 		delay_us(10);
 	}
 	
-	usart1SendByte('#');
+//	usart1SendByte('#');
 	//开始读取40bit的所有数据
 	humitureBuffer[0] = readHumitureByte();
 	humitureBuffer[1] = readHumitureByte();
@@ -78,7 +79,7 @@ bool readHumiture(unsigned char humitureDat[5])//读取并赋值到数据
 		humitureDat[2] = humitureBuffer[2];
 		humitureDat[3] = humitureBuffer[3];
 		humitureDat[4] = humitureBuffer[4];
-		usart1SendByte('@');
+//		usart1SendByte('@');
 		return true;
 	}else{
 		humitureDat[0] = humitureBuffer[0];
@@ -86,7 +87,7 @@ bool readHumiture(unsigned char humitureDat[5])//读取并赋值到数据
 		humitureDat[2] = humitureBuffer[2];
 		humitureDat[3] = humitureBuffer[3];
 		humitureDat[4] = humitureBuffer[4];
-		usart1SendByte('$');
+//		usart1SendByte('$');
 		return false;
 	}
 }

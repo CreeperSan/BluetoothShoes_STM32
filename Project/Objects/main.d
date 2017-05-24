@@ -42,3 +42,7 @@
 .\objects\main.o: ..\User\delay.h
 .\objects\main.o: ..\User\uart.h
 .\objects\main.o: ..\User\tim.h
+.\objects\main.o: ..\User\led.h
+.\objects\main.o: ..\User\viberate.h
+.\objects\main.o: ..\User\buzzer.h
+.\objects\main.o: ..\User\adc.h

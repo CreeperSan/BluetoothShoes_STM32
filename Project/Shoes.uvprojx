@@ -389,6 +389,41 @@
               <FileType>1</FileType>
               <FilePath>..\User\uart.c</FilePath>
             </File>
+            <File>
+              <FileName>humiture.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\humiture.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>viberate.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\viberate.c</FilePath>
+            </File>
+            <File>
+              <FileName>buzzer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\buzzer.c</FilePath>
+            </File>
+            <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\adc.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
