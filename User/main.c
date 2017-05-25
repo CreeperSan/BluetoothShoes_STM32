@@ -9,6 +9,7 @@
 #include "viberate.h"
 #include "buzzer.h"
 #include "adc.h"
+#include "warm.h"
 
 void sendTempData(void);
 
@@ -26,6 +27,9 @@ unsigned char notificationFrequency = 8;
 bool isMassage = false;
 unsigned char massageFrequency = 0;
 bool isLed = false;
+bool isLedNotification = false;
+bool isLedNotificating = false;
+unsigned char ledNotificationLeft = 0;
 bool isNeedTemp = true;
 
 int main()
@@ -41,6 +45,7 @@ int main()
 	Rheostat_Init();
 	initHumitureClock();//初始化温湿度时钟
 	initHumitureAsOutput();//初始化温湿度控制
+	initWarm();
 	usart1SendString("System Start!");
 	while(1)
 	{
@@ -65,6 +70,28 @@ int main()
 		else
 		{
 			setLedState(false);
+		}
+		if(isLedNotification)
+		{
+			if((count%16)>=8)
+			{
+				isLedNotificating = true;
+				setLedState(true);
+			}
+			else
+			{
+				if(isLedNotificating)
+				{
+					isLedNotificating = false;
+					ledNotificationLeft--;
+				}
+				setLedState(false);
+			}
+			if(ledNotificationLeft<=0)
+			{
+				isLedNotification = false;
+				isLedNotificating = false;
+			}
 		}
 		//蜂鸣器处理
 		if(isBuzzer)
@@ -129,6 +156,10 @@ void USART1_IRQHandler(void)
 			isLed = true;
 		}else if(getChar == '2'){//关灯
 			isLed = false;
+		}else if(getChar == '3'){//LED通知闪烁
+			isLedNotification = true;
+			isLedNotificating = false;
+			ledNotificationLeft = 5;
 		}else if(getChar == 'a'){//按摩等级1
 			isMassage = true;
 			massageFrequency = 2;
@@ -148,8 +179,6 @@ void USART1_IRQHandler(void)
 			isMassage = false;
 			massageFrequency = 0;
 			setMassageState(false);
-		}else if(getChar == '5'){//闪烁灯
-			setNotificationState(false);
 		}else if(getChar == '6'){//消息通知
 			isNotification = true;
 			isNotificating = false;
@@ -160,6 +189,10 @@ void USART1_IRQHandler(void)
 		}else if(getChar == '8'){//关蜂鸣器
 			isBuzzer = false;
 			setBuzzerState(false);
+		}else if(getChar == '4'){//开始加热
+			setWarmState(true);
+		}else if(getChar == '5'){//停止加热
+			setWarmState(false);
 		}
 	}
 }

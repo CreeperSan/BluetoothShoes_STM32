@@ -8,6 +8,7 @@
 ".\objects\viberate.o"
 ".\objects\buzzer.o"
 ".\objects\adc.o"
+".\objects\warm.o"
 ".\objects\stm32f4xx_it.o"
 ".\objects\misc.o"
 ".\objects\stm32f4xx_adc.o"

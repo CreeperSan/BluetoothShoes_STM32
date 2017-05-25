@@ -424,6 +424,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\adc.c</FilePath>
             </File>
+            <File>
+              <FileName>warm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\warm.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

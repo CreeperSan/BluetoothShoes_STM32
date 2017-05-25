@@ -46,3 +46,4 @@
 .\objects\main.o: ..\User\viberate.h
 .\objects\main.o: ..\User\buzzer.h
 .\objects\main.o: ..\User\adc.h
+.\objects\main.o: ..\User\warm.h
