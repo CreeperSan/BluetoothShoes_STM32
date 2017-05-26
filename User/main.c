@@ -149,7 +149,7 @@ void USART1_IRQHandler(void)
 	uint8_t getChar;
 	if(USART_GetFlagStatus(USART1,USART_FLAG_RXNE)){
 		getChar = USART_ReceiveData(USART1);
-		usart1SendByte(getChar);
+//		usart1SendByte(getChar);
 		if(getChar == '0'){//回传温度
 			sendTempData();
 		}else if(getChar == '1'){//开灯
@@ -199,28 +199,21 @@ void USART1_IRQHandler(void)
 
 void sendTempData()
 {
-	usart1SendString("|");
+	usart1SendString("<");
 	usart1SendByte(0x30+(dat_humiture[0]%1000/100));
 	usart1SendByte(0x30+(dat_humiture[0]%100/10));
 	usart1SendByte(0x30+(dat_humiture[0]%10));
-	usart1SendByte('.');
-	usart1SendByte(0x30+(dat_humiture[1]%1000/100));
-	usart1SendByte(0x30+(dat_humiture[1]%100/10));
-	usart1SendByte(0x30+(dat_humiture[1]%10));
-	usart1SendString("|");
+	usart1SendString(",");
 	usart1SendByte(0x30+(dat_humiture[2]%1000/100));
 	usart1SendByte(0x30+(dat_humiture[2]%100/10));
 	usart1SendByte(0x30+(dat_humiture[2]%10));
-	usart1SendByte('.');
-	usart1SendByte(0x30+(dat_humiture[3]%1000/100));
-	usart1SendByte(0x30+(dat_humiture[3]%100/10));
-	usart1SendByte(0x30+(dat_humiture[3]%10));
-	usart1SendByte('|');
+	usart1SendByte(',');
 	usart1SendByte(0x30+(ADC_ConvertedValue/10000));
 	usart1SendByte(0x30+(ADC_ConvertedValue%10000/1000));
 	usart1SendByte(0x30+(ADC_ConvertedValue%1000/100));
 	usart1SendByte(0x30+(ADC_ConvertedValue%100/10));
 	usart1SendByte(0x30+(ADC_ConvertedValue%10));
+	usart1SendByte('>');
 }
 
 //----- 闪烁定时器中断

@@ -10,7 +10,6 @@ Section Cross References
     main.o(i.TIM6_DAC_IRQHandler) refers to main.o(.data) for count
     main.o(i.USART1_IRQHandler) refers to stm32f4xx_usart.o(i.USART_GetFlagStatus) for USART_GetFlagStatus
     main.o(i.USART1_IRQHandler) refers to stm32f4xx_usart.o(i.USART_ReceiveData) for USART_ReceiveData
-    main.o(i.USART1_IRQHandler) refers to uart.o(i.usart1SendByte) for usart1SendByte
     main.o(i.USART1_IRQHandler) refers to main.o(i.sendTempData) for sendTempData
     main.o(i.USART1_IRQHandler) refers to viberate.o(i.setMassageState) for setMassageState
     main.o(i.USART1_IRQHandler) refers to buzzer.o(i.setBuzzerState) for setBuzzerState
@@ -1552,44 +1551,44 @@ Image Symbol Table
     i.TIM_ITConfig                           0x08000ae8   Section        0  stm32f4xx_tim.o(i.TIM_ITConfig)
     i.TIM_TimeBaseInit                       0x08000afc   Section        0  stm32f4xx_tim.o(i.TIM_TimeBaseInit)
     i.USART1_IRQHandler                      0x08000b80   Section        0  main.o(i.USART1_IRQHandler)
-    i.USART_Cmd                              0x08000cc8   Section        0  stm32f4xx_usart.o(i.USART_Cmd)
-    i.USART_GetFlagStatus                    0x08000ce0   Section        0  stm32f4xx_usart.o(i.USART_GetFlagStatus)
-    i.USART_ITConfig                         0x08000cfa   Section        0  stm32f4xx_usart.o(i.USART_ITConfig)
-    i.USART_Init                             0x08000d44   Section        0  stm32f4xx_usart.o(i.USART_Init)
-    i.USART_ReceiveData                      0x08000e18   Section        0  stm32f4xx_usart.o(i.USART_ReceiveData)
-    i.USART_SendData                         0x08000e22   Section        0  stm32f4xx_usart.o(i.USART_SendData)
-    i.UsageFault_Handler                     0x08000e2a   Section        0  stm32f4xx_it.o(i.UsageFault_Handler)
-    i.delayTimeDecrement                     0x08000e30   Section        0  delay.o(i.delayTimeDecrement)
-    i.delayUs                                0x08000e48   Section        0  delay.o(i.delayUs)
-    delayUs                                  0x08000e49   Thumb Code    20  delay.o(i.delayUs)
-    i.delay_us                               0x08000e60   Section        0  delay.o(i.delay_us)
-    i.getHumiturePinStatus                   0x08000e6c   Section        0  humiture.o(i.getHumiturePinStatus)
-    getHumiturePinStatus                     0x08000e6d   Thumb Code    14  humiture.o(i.getHumiturePinStatus)
-    i.initBuzzer                             0x08000e80   Section        0  buzzer.o(i.initBuzzer)
-    i.initHumitureAsInput                    0x08000eb4   Section        0  humiture.o(i.initHumitureAsInput)
-    i.initHumitureAsOutput                   0x08000ee8   Section        0  humiture.o(i.initHumitureAsOutput)
-    i.initHumitureClock                      0x08000f20   Section        0  humiture.o(i.initHumitureClock)
-    i.initLed                                0x08000f2c   Section        0  led.o(i.initLed)
-    i.initMassage                            0x08000f64   Section        0  viberate.o(i.initMassage)
-    i.initNotification                       0x08000f98   Section        0  viberate.o(i.initNotification)
-    i.initSystemTick                         0x08000fcc   Section        0  delay.o(i.initSystemTick)
-    i.initTimTwinkle                         0x08001044   Section        0  tim.o(i.initTimTwinkle)
-    i.initUSART1                             0x080010a8   Section        0  uart.o(i.initUSART1)
-    i.initWarm                               0x08001164   Section        0  warm.o(i.initWarm)
-    i.main                                   0x0800119c   Section        0  main.o(i.main)
-    i.readHumiture                           0x0800134c   Section        0  humiture.o(i.readHumiture)
-    i.readHumitureByte                       0x08001460   Section        0  humiture.o(i.readHumitureByte)
-    readHumitureByte                         0x08001461   Thumb Code    66  humiture.o(i.readHumitureByte)
-    i.sendTempData                           0x080014a4   Section        0  main.o(i.sendTempData)
-    i.setBuzzerState                         0x080016b8   Section        0  buzzer.o(i.setBuzzerState)
-    i.setLedState                            0x080016d8   Section        0  led.o(i.setLedState)
-    i.setMassageState                        0x080016fc   Section        0  viberate.o(i.setMassageState)
-    i.setNotificationState                   0x08001720   Section        0  viberate.o(i.setNotificationState)
-    i.setWarmState                           0x08001744   Section        0  warm.o(i.setWarmState)
-    i.usart1SendByte                         0x08001768   Section        0  uart.o(i.usart1SendByte)
-    i.usart1SendString                       0x08001788   Section        0  uart.o(i.usart1SendString)
-    x$fpl$fpinit                             0x080017b4   Section       10  fpinit.o(x$fpl$fpinit)
-    $v0                                      0x080017b4   Number         0  fpinit.o(x$fpl$fpinit)
+    i.USART_Cmd                              0x08000cc0   Section        0  stm32f4xx_usart.o(i.USART_Cmd)
+    i.USART_GetFlagStatus                    0x08000cd8   Section        0  stm32f4xx_usart.o(i.USART_GetFlagStatus)
+    i.USART_ITConfig                         0x08000cf2   Section        0  stm32f4xx_usart.o(i.USART_ITConfig)
+    i.USART_Init                             0x08000d3c   Section        0  stm32f4xx_usart.o(i.USART_Init)
+    i.USART_ReceiveData                      0x08000e10   Section        0  stm32f4xx_usart.o(i.USART_ReceiveData)
+    i.USART_SendData                         0x08000e1a   Section        0  stm32f4xx_usart.o(i.USART_SendData)
+    i.UsageFault_Handler                     0x08000e22   Section        0  stm32f4xx_it.o(i.UsageFault_Handler)
+    i.delayTimeDecrement                     0x08000e28   Section        0  delay.o(i.delayTimeDecrement)
+    i.delayUs                                0x08000e40   Section        0  delay.o(i.delayUs)
+    delayUs                                  0x08000e41   Thumb Code    20  delay.o(i.delayUs)
+    i.delay_us                               0x08000e58   Section        0  delay.o(i.delay_us)
+    i.getHumiturePinStatus                   0x08000e64   Section        0  humiture.o(i.getHumiturePinStatus)
+    getHumiturePinStatus                     0x08000e65   Thumb Code    14  humiture.o(i.getHumiturePinStatus)
+    i.initBuzzer                             0x08000e78   Section        0  buzzer.o(i.initBuzzer)
+    i.initHumitureAsInput                    0x08000eac   Section        0  humiture.o(i.initHumitureAsInput)
+    i.initHumitureAsOutput                   0x08000ee0   Section        0  humiture.o(i.initHumitureAsOutput)
+    i.initHumitureClock                      0x08000f18   Section        0  humiture.o(i.initHumitureClock)
+    i.initLed                                0x08000f24   Section        0  led.o(i.initLed)
+    i.initMassage                            0x08000f5c   Section        0  viberate.o(i.initMassage)
+    i.initNotification                       0x08000f90   Section        0  viberate.o(i.initNotification)
+    i.initSystemTick                         0x08000fc4   Section        0  delay.o(i.initSystemTick)
+    i.initTimTwinkle                         0x0800103c   Section        0  tim.o(i.initTimTwinkle)
+    i.initUSART1                             0x080010a0   Section        0  uart.o(i.initUSART1)
+    i.initWarm                               0x0800115c   Section        0  warm.o(i.initWarm)
+    i.main                                   0x08001190   Section        0  main.o(i.main)
+    i.readHumiture                           0x08001340   Section        0  humiture.o(i.readHumiture)
+    i.readHumitureByte                       0x08001454   Section        0  humiture.o(i.readHumitureByte)
+    readHumitureByte                         0x08001455   Thumb Code    66  humiture.o(i.readHumitureByte)
+    i.sendTempData                           0x08001498   Section        0  main.o(i.sendTempData)
+    i.setBuzzerState                         0x08001600   Section        0  buzzer.o(i.setBuzzerState)
+    i.setLedState                            0x08001620   Section        0  led.o(i.setLedState)
+    i.setMassageState                        0x08001644   Section        0  viberate.o(i.setMassageState)
+    i.setNotificationState                   0x08001668   Section        0  viberate.o(i.setNotificationState)
+    i.setWarmState                           0x0800168c   Section        0  warm.o(i.setWarmState)
+    i.usart1SendByte                         0x080016ac   Section        0  uart.o(i.usart1SendByte)
+    i.usart1SendString                       0x080016cc   Section        0  uart.o(i.usart1SendString)
+    x$fpl$fpinit                             0x080016f8   Section       10  fpinit.o(x$fpl$fpinit)
+    $v0                                      0x080016f8   Number         0  fpinit.o(x$fpl$fpinit)
     .data                                    0x20000000   Section       25  main.o(.data)
     .data                                    0x2000001c   Section        4  delay.o(.data)
     delayTime                                0x2000001c   Data           4  delay.o(.data)
@@ -1828,42 +1827,42 @@ Image Symbol Table
     TIM_GetITStatus                          0x08000ac7   Thumb Code    34  stm32f4xx_tim.o(i.TIM_GetITStatus)
     TIM_ITConfig                             0x08000ae9   Thumb Code    18  stm32f4xx_tim.o(i.TIM_ITConfig)
     TIM_TimeBaseInit                         0x08000afd   Thumb Code   104  stm32f4xx_tim.o(i.TIM_TimeBaseInit)
-    USART1_IRQHandler                        0x08000b81   Thumb Code   278  main.o(i.USART1_IRQHandler)
-    USART_Cmd                                0x08000cc9   Thumb Code    24  stm32f4xx_usart.o(i.USART_Cmd)
-    USART_GetFlagStatus                      0x08000ce1   Thumb Code    26  stm32f4xx_usart.o(i.USART_GetFlagStatus)
-    USART_ITConfig                           0x08000cfb   Thumb Code    74  stm32f4xx_usart.o(i.USART_ITConfig)
-    USART_Init                               0x08000d45   Thumb Code   204  stm32f4xx_usart.o(i.USART_Init)
-    USART_ReceiveData                        0x08000e19   Thumb Code    10  stm32f4xx_usart.o(i.USART_ReceiveData)
-    USART_SendData                           0x08000e23   Thumb Code     8  stm32f4xx_usart.o(i.USART_SendData)
-    UsageFault_Handler                       0x08000e2b   Thumb Code     4  stm32f4xx_it.o(i.UsageFault_Handler)
-    delayTimeDecrement                       0x08000e31   Thumb Code    18  delay.o(i.delayTimeDecrement)
-    delay_us                                 0x08000e61   Thumb Code    12  delay.o(i.delay_us)
-    initBuzzer                               0x08000e81   Thumb Code    48  buzzer.o(i.initBuzzer)
-    initHumitureAsInput                      0x08000eb5   Thumb Code    46  humiture.o(i.initHumitureAsInput)
-    initHumitureAsOutput                     0x08000ee9   Thumb Code    52  humiture.o(i.initHumitureAsOutput)
-    initHumitureClock                        0x08000f21   Thumb Code    12  humiture.o(i.initHumitureClock)
-    initLed                                  0x08000f2d   Thumb Code    50  led.o(i.initLed)
-    initMassage                              0x08000f65   Thumb Code    48  viberate.o(i.initMassage)
-    initNotification                         0x08000f99   Thumb Code    48  viberate.o(i.initNotification)
-    initSystemTick                           0x08000fcd   Thumb Code    94  delay.o(i.initSystemTick)
-    initTimTwinkle                           0x08001045   Thumb Code    96  tim.o(i.initTimTwinkle)
-    initUSART1                               0x080010a9   Thumb Code   178  uart.o(i.initUSART1)
-    initWarm                                 0x08001165   Thumb Code    50  warm.o(i.initWarm)
-    main                                     0x0800119d   Thumb Code   358  main.o(i.main)
-    readHumiture                             0x0800134d   Thumb Code   272  humiture.o(i.readHumiture)
-    sendTempData                             0x080014a5   Thumb Code   520  main.o(i.sendTempData)
-    setBuzzerState                           0x080016b9   Thumb Code    26  buzzer.o(i.setBuzzerState)
-    setLedState                              0x080016d9   Thumb Code    30  led.o(i.setLedState)
-    setMassageState                          0x080016fd   Thumb Code    30  viberate.o(i.setMassageState)
-    setNotificationState                     0x08001721   Thumb Code    30  viberate.o(i.setNotificationState)
-    setWarmState                             0x08001745   Thumb Code    30  warm.o(i.setWarmState)
-    usart1SendByte                           0x08001769   Thumb Code    28  uart.o(i.usart1SendByte)
-    usart1SendString                         0x08001789   Thumb Code    40  uart.o(i.usart1SendString)
-    _fp_init                                 0x080017b5   Thumb Code    10  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x080017bd   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x080017bd   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    Region$$Table$$Base                      0x080017c0   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080017e0   Number         0  anon$$obj.o(Region$$Table)
+    USART1_IRQHandler                        0x08000b81   Thumb Code   272  main.o(i.USART1_IRQHandler)
+    USART_Cmd                                0x08000cc1   Thumb Code    24  stm32f4xx_usart.o(i.USART_Cmd)
+    USART_GetFlagStatus                      0x08000cd9   Thumb Code    26  stm32f4xx_usart.o(i.USART_GetFlagStatus)
+    USART_ITConfig                           0x08000cf3   Thumb Code    74  stm32f4xx_usart.o(i.USART_ITConfig)
+    USART_Init                               0x08000d3d   Thumb Code   204  stm32f4xx_usart.o(i.USART_Init)
+    USART_ReceiveData                        0x08000e11   Thumb Code    10  stm32f4xx_usart.o(i.USART_ReceiveData)
+    USART_SendData                           0x08000e1b   Thumb Code     8  stm32f4xx_usart.o(i.USART_SendData)
+    UsageFault_Handler                       0x08000e23   Thumb Code     4  stm32f4xx_it.o(i.UsageFault_Handler)
+    delayTimeDecrement                       0x08000e29   Thumb Code    18  delay.o(i.delayTimeDecrement)
+    delay_us                                 0x08000e59   Thumb Code    12  delay.o(i.delay_us)
+    initBuzzer                               0x08000e79   Thumb Code    48  buzzer.o(i.initBuzzer)
+    initHumitureAsInput                      0x08000ead   Thumb Code    46  humiture.o(i.initHumitureAsInput)
+    initHumitureAsOutput                     0x08000ee1   Thumb Code    52  humiture.o(i.initHumitureAsOutput)
+    initHumitureClock                        0x08000f19   Thumb Code    12  humiture.o(i.initHumitureClock)
+    initLed                                  0x08000f25   Thumb Code    50  led.o(i.initLed)
+    initMassage                              0x08000f5d   Thumb Code    48  viberate.o(i.initMassage)
+    initNotification                         0x08000f91   Thumb Code    48  viberate.o(i.initNotification)
+    initSystemTick                           0x08000fc5   Thumb Code    94  delay.o(i.initSystemTick)
+    initTimTwinkle                           0x0800103d   Thumb Code    96  tim.o(i.initTimTwinkle)
+    initUSART1                               0x080010a1   Thumb Code   178  uart.o(i.initUSART1)
+    initWarm                                 0x0800115d   Thumb Code    48  warm.o(i.initWarm)
+    main                                     0x08001191   Thumb Code   358  main.o(i.main)
+    readHumiture                             0x08001341   Thumb Code   272  humiture.o(i.readHumiture)
+    sendTempData                             0x08001499   Thumb Code   342  main.o(i.sendTempData)
+    setBuzzerState                           0x08001601   Thumb Code    26  buzzer.o(i.setBuzzerState)
+    setLedState                              0x08001621   Thumb Code    30  led.o(i.setLedState)
+    setMassageState                          0x08001645   Thumb Code    30  viberate.o(i.setMassageState)
+    setNotificationState                     0x08001669   Thumb Code    30  viberate.o(i.setNotificationState)
+    setWarmState                             0x0800168d   Thumb Code    26  warm.o(i.setWarmState)
+    usart1SendByte                           0x080016ad   Thumb Code    28  uart.o(i.usart1SendByte)
+    usart1SendString                         0x080016cd   Thumb Code    40  uart.o(i.usart1SendString)
+    _fp_init                                 0x080016f9   Thumb Code    10  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x08001701   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x08001701   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    Region$$Table$$Base                      0x08001704   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08001724   Number         0  anon$$obj.o(Region$$Table)
     dat_humiture                             0x20000000   Data           5  main.o(.data)
     ADC_Vol                                  0x20000008   Data           4  main.o(.data)
     count                                    0x2000000c   Data           1  main.o(.data)
@@ -1893,9 +1892,9 @@ Memory Map of the image
 
   Image Entry point : 0x0800024d
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x00001828, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x08000000, Size: 0x0000176c, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Base: 0x08000000, Size: 0x000017e0, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Base: 0x08000000, Size: 0x00001724, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1998,45 +1997,45 @@ Memory Map of the image
     0x08000ae8   0x00000012   Code   RO         4826    i.TIM_ITConfig      stm32f4xx_tim.o
     0x08000afa   0x00000002   PAD
     0x08000afc   0x00000084   Code   RO         4873    i.TIM_TimeBaseInit  stm32f4xx_tim.o
-    0x08000b80   0x00000148   Code   RO            6    i.USART1_IRQHandler  main.o
-    0x08000cc8   0x00000018   Code   RO         5355    i.USART_Cmd         stm32f4xx_usart.o
-    0x08000ce0   0x0000001a   Code   RO         5358    i.USART_GetFlagStatus  stm32f4xx_usart.o
-    0x08000cfa   0x0000004a   Code   RO         5361    i.USART_ITConfig    stm32f4xx_usart.o
-    0x08000d44   0x000000d4   Code   RO         5362    i.USART_Init        stm32f4xx_usart.o
-    0x08000e18   0x0000000a   Code   RO         5369    i.USART_ReceiveData  stm32f4xx_usart.o
-    0x08000e22   0x00000008   Code   RO         5372    i.USART_SendData    stm32f4xx_usart.o
-    0x08000e2a   0x00000004   Code   RO          554    i.UsageFault_Handler  stm32f4xx_it.o
-    0x08000e2e   0x00000002   PAD
-    0x08000e30   0x00000018   Code   RO          301    i.delayTimeDecrement  delay.o
-    0x08000e48   0x00000018   Code   RO          302    i.delayUs           delay.o
-    0x08000e60   0x0000000c   Code   RO          304    i.delay_us          delay.o
-    0x08000e6c   0x00000014   Code   RO          249    i.getHumiturePinStatus  humiture.o
-    0x08000e80   0x00000034   Code   RO          450    i.initBuzzer        buzzer.o
-    0x08000eb4   0x00000034   Code   RO          250    i.initHumitureAsInput  humiture.o
-    0x08000ee8   0x00000038   Code   RO          251    i.initHumitureAsOutput  humiture.o
-    0x08000f20   0x0000000c   Code   RO          252    i.initHumitureClock  humiture.o
-    0x08000f2c   0x00000038   Code   RO          378    i.initLed           led.o
-    0x08000f64   0x00000034   Code   RO          408    i.initMassage       viberate.o
-    0x08000f98   0x00000034   Code   RO          409    i.initNotification  viberate.o
-    0x08000fcc   0x00000078   Code   RO          305    i.initSystemTick    delay.o
-    0x08001044   0x00000064   Code   RO          354    i.initTimTwinkle    tim.o
-    0x080010a8   0x000000bc   Code   RO          204    i.initUSART1        uart.o
-    0x08001164   0x00000038   Code   RO          517    i.initWarm          warm.o
-    0x0800119c   0x000001b0   Code   RO            7    i.main              main.o
-    0x0800134c   0x00000114   Code   RO          253    i.readHumiture      humiture.o
-    0x08001460   0x00000042   Code   RO          254    i.readHumitureByte  humiture.o
-    0x080014a2   0x00000002   PAD
-    0x080014a4   0x00000214   Code   RO            8    i.sendTempData      main.o
-    0x080016b8   0x00000020   Code   RO          451    i.setBuzzerState    buzzer.o
-    0x080016d8   0x00000024   Code   RO          379    i.setLedState       led.o
-    0x080016fc   0x00000024   Code   RO          410    i.setMassageState   viberate.o
-    0x08001720   0x00000024   Code   RO          411    i.setNotificationState  viberate.o
-    0x08001744   0x00000024   Code   RO          518    i.setWarmState      warm.o
-    0x08001768   0x00000020   Code   RO          205    i.usart1SendByte    uart.o
-    0x08001788   0x0000002c   Code   RO          206    i.usart1SendString  uart.o
-    0x080017b4   0x0000000a   Code   RO         5745    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x080017be   0x00000002   PAD
-    0x080017c0   0x00000020   Data   RO         5813    Region$$Table       anon$$obj.o
+    0x08000b80   0x00000140   Code   RO            6    i.USART1_IRQHandler  main.o
+    0x08000cc0   0x00000018   Code   RO         5355    i.USART_Cmd         stm32f4xx_usart.o
+    0x08000cd8   0x0000001a   Code   RO         5358    i.USART_GetFlagStatus  stm32f4xx_usart.o
+    0x08000cf2   0x0000004a   Code   RO         5361    i.USART_ITConfig    stm32f4xx_usart.o
+    0x08000d3c   0x000000d4   Code   RO         5362    i.USART_Init        stm32f4xx_usart.o
+    0x08000e10   0x0000000a   Code   RO         5369    i.USART_ReceiveData  stm32f4xx_usart.o
+    0x08000e1a   0x00000008   Code   RO         5372    i.USART_SendData    stm32f4xx_usart.o
+    0x08000e22   0x00000004   Code   RO          554    i.UsageFault_Handler  stm32f4xx_it.o
+    0x08000e26   0x00000002   PAD
+    0x08000e28   0x00000018   Code   RO          301    i.delayTimeDecrement  delay.o
+    0x08000e40   0x00000018   Code   RO          302    i.delayUs           delay.o
+    0x08000e58   0x0000000c   Code   RO          304    i.delay_us          delay.o
+    0x08000e64   0x00000014   Code   RO          249    i.getHumiturePinStatus  humiture.o
+    0x08000e78   0x00000034   Code   RO          450    i.initBuzzer        buzzer.o
+    0x08000eac   0x00000034   Code   RO          250    i.initHumitureAsInput  humiture.o
+    0x08000ee0   0x00000038   Code   RO          251    i.initHumitureAsOutput  humiture.o
+    0x08000f18   0x0000000c   Code   RO          252    i.initHumitureClock  humiture.o
+    0x08000f24   0x00000038   Code   RO          378    i.initLed           led.o
+    0x08000f5c   0x00000034   Code   RO          408    i.initMassage       viberate.o
+    0x08000f90   0x00000034   Code   RO          409    i.initNotification  viberate.o
+    0x08000fc4   0x00000078   Code   RO          305    i.initSystemTick    delay.o
+    0x0800103c   0x00000064   Code   RO          354    i.initTimTwinkle    tim.o
+    0x080010a0   0x000000bc   Code   RO          204    i.initUSART1        uart.o
+    0x0800115c   0x00000034   Code   RO          517    i.initWarm          warm.o
+    0x08001190   0x000001b0   Code   RO            7    i.main              main.o
+    0x08001340   0x00000114   Code   RO          253    i.readHumiture      humiture.o
+    0x08001454   0x00000042   Code   RO          254    i.readHumitureByte  humiture.o
+    0x08001496   0x00000002   PAD
+    0x08001498   0x00000168   Code   RO            8    i.sendTempData      main.o
+    0x08001600   0x00000020   Code   RO          451    i.setBuzzerState    buzzer.o
+    0x08001620   0x00000024   Code   RO          379    i.setLedState       led.o
+    0x08001644   0x00000024   Code   RO          410    i.setMassageState   viberate.o
+    0x08001668   0x00000024   Code   RO          411    i.setNotificationState  viberate.o
+    0x0800168c   0x00000020   Code   RO          518    i.setWarmState      warm.o
+    0x080016ac   0x00000020   Code   RO          205    i.usart1SendByte    uart.o
+    0x080016cc   0x0000002c   Code   RO          206    i.usart1SendString  uart.o
+    0x080016f8   0x0000000a   Code   RO         5745    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x08001702   0x00000002   PAD
+    0x08001704   0x00000020   Data   RO         5813    Region$$Table       anon$$obj.o
 
 
     Execution Region ER_RW (Base: 0x20000000, Size: 0x00000048, Max: 0xffffffff, ABSOLUTE)
@@ -2073,7 +2072,7 @@ Image component sizes
        180         36          0          4          0      29064   delay.o
        482         20          0          0          0       3428   humiture.o
         92         12          0          0          0       1008   led.o
-      1352        144          0         25          0     325281   main.o
+      1172        148          0         25          0     325249   main.o
        140         24          0          0          0       1679   misc.o
         64         26        428          0       1536        836   startup_stm32f429_439xx.o
        392         24          0          0          0       5831   stm32f4xx_adc.o
@@ -2087,10 +2086,10 @@ Image component sizes
        100          4          0          0          0        541   tim.o
        264         18          0          0          0       1745   uart.o
        176         20          0          0          0       2106   viberate.o
-        92         12          0          0          0       1014   warm.o
+        84         10          0          0          0       1014   warm.o
 
     ----------------------------------------------------------------------
-      5358        476        460         72       1536     401471   Object Totals
+      5170        478        460         72       1536     401439   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         10          0          0          5          0          0   (incl. Padding)
 
@@ -2141,15 +2140,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      5652        492        460         72       1632     395215   Grand Totals
-      5652        492        460         72       1632     395215   ELF Image Totals
-      5652        492        460         72          0          0   ROM Totals
+      5464        494        460         72       1632     395183   Grand Totals
+      5464        494        460         72       1632     395183   ELF Image Totals
+      5464        494        460         72          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 6112 (   5.97kB)
+    Total RO  Size (Code + RO Data)                 5924 (   5.79kB)
     Total RW  Size (RW Data + ZI Data)              1704 (   1.66kB)
-    Total ROM Size (Code + RO Data + RW Data)       6184 (   6.04kB)
+    Total ROM Size (Code + RO Data + RW Data)       5996 (   5.86kB)
 
 ==============================================================================
 

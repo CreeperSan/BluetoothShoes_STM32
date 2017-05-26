@@ -1,5 +1,5 @@
 Dependencies for Project 'Shoes', Target 'Shoes': (DO NOT MODIFY !)
-F (..\User\main.c)(0x59256A89)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\STARTUP -I ..\Extra -I ..\Lib\STM32F4xx_StdPeriph_Driver\inc -I ..\Lib\CMSIS\Include -I ..\Lib\CMSIS\Device\ST\STM32F4xx\Include-I.\RTE\_Shoes-IF:\Software\Keil5\Pack\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IE:\Software\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\User\main.c)(0x59279121)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\STARTUP -I ..\Extra -I ..\Lib\STM32F4xx_StdPeriph_Driver\inc -I ..\Lib\CMSIS\Include -I ..\Lib\CMSIS\Device\ST\STM32F4xx\Include-I.\RTE\_Shoes-IF:\Software\Keil5\Pack\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IE:\Software\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\Lib\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5559F432)
 I (..\Lib\CMSIS\Include\core_cm4.h)(0x5559F3AD)
 I (E:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
@@ -248,7 +248,7 @@ I (..\Lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_ltdc.h)(0x555C4781)
 I (..\Lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h)(0x555C4781)
 I (..\User\led.h)(0x5923D320)
 I (..\User\define.h)(0x58F8B622)
-F (..\User\viberate.c)(0x5923F10C)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\STARTUP -I ..\Extra -I ..\Lib\STM32F4xx_StdPeriph_Driver\inc -I ..\Lib\CMSIS\Include -I ..\Lib\CMSIS\Device\ST\STM32F4xx\Include-I.\RTE\_Shoes-IF:\Software\Keil5\Pack\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IE:\Software\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx-o .\objects\viberate.o --omf_browse .\objects\viberate.crf --depend .\objects\viberate.d)
+F (..\User\viberate.c)(0x592822F2)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\STARTUP -I ..\Extra -I ..\Lib\STM32F4xx_StdPeriph_Driver\inc -I ..\Lib\CMSIS\Include -I ..\Lib\CMSIS\Device\ST\STM32F4xx\Include-I.\RTE\_Shoes-IF:\Software\Keil5\Pack\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IE:\Software\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx-o .\objects\viberate.o --omf_browse .\objects\viberate.crf --depend .\objects\viberate.d)
 I (..\Lib\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5559F432)
 I (..\Lib\CMSIS\Include\core_cm4.h)(0x5559F3AD)
 I (E:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
@@ -367,7 +367,7 @@ I (..\Lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma2d.h)(0x555C4781)
 I (..\Lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h)(0x555C4781)
 I (..\Lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_ltdc.h)(0x555C4781)
 I (..\Lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h)(0x555C4781)
-F (..\User\warm.c)(0x592515C1)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\STARTUP -I ..\Extra -I ..\Lib\STM32F4xx_StdPeriph_Driver\inc -I ..\Lib\CMSIS\Include -I ..\Lib\CMSIS\Device\ST\STM32F4xx\Include-I.\RTE\_Shoes-IF:\Software\Keil5\Pack\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IE:\Software\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx-o .\objects\warm.o --omf_browse .\objects\warm.crf --depend .\objects\warm.d)
+F (..\User\warm.c)(0x592822BC)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\STARTUP -I ..\Extra -I ..\Lib\STM32F4xx_StdPeriph_Driver\inc -I ..\Lib\CMSIS\Include -I ..\Lib\CMSIS\Device\ST\STM32F4xx\Include-I.\RTE\_Shoes-IF:\Software\Keil5\Pack\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IE:\Software\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx-o .\objects\warm.o --omf_browse .\objects\warm.crf --depend .\objects\warm.d)
 I (..\Lib\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5559F432)
 I (..\Lib\CMSIS\Include\core_cm4.h)(0x5559F3AD)
 I (E:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
@@ -409,7 +409,7 @@ I (..\User\define.h)(0x58F8B622)
 I (..\User\warm.h)(0x592515D8)
 F (..\Doc\使用说明.txt)(0x5922D79B)()
 F (..\Doc\通讯协议.txt)(0x58F614D5)()
-F (..\Doc\资源分配表.txt)(0x59251681)()
+F (..\Doc\资源分配表.txt)(0x5928217F)()
 F (..\Extra\stm32f4xx_it.c)(0x58FCAA5F)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\STARTUP -I ..\Extra -I ..\Lib\STM32F4xx_StdPeriph_Driver\inc -I ..\Lib\CMSIS\Include -I ..\Lib\CMSIS\Device\ST\STM32F4xx\Include-I.\RTE\_Shoes-IF:\Software\Keil5\Pack\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IE:\Software\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
 I (..\Extra\stm32f4xx_it.h)(0x5559F374)
 I (..\Lib\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5559F432)
