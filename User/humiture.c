@@ -51,7 +51,7 @@ bool readHumiture(unsigned char humitureDat[5])//读取并赋值到数据
 			delay_us(10);
 		}
 	}else{
-		usart1SendByte('-');
+//		usart1SendByte('-');
 		return false;
 	}
 //	usart1SendByte('*');

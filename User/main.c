@@ -29,7 +29,6 @@ unsigned char massageFrequency = 0;
 bool isLed = false;
 bool isLedNotification = false;
 bool isLedNotificating = false;
-unsigned char ledNotificationLeft = 0;
 bool isNeedTemp = true;
 
 int main()
@@ -59,7 +58,9 @@ int main()
 			if(isNeedTemp)
 			{
 				isNeedTemp = false;
+				USART_Cmd(USART1,DISABLE);//临时关闭串口
 				readHumiture(dat_humiture);
+				USART_Cmd(USART1,ENABLE);//重新打开串口
 			}
 		}
 		//LED操作
@@ -83,14 +84,8 @@ int main()
 				if(isLedNotificating)
 				{
 					isLedNotificating = false;
-					ledNotificationLeft--;
 				}
 				setLedState(false);
-			}
-			if(ledNotificationLeft<=0)
-			{
-				isLedNotification = false;
-				isLedNotificating = false;
 			}
 		}
 		//蜂鸣器处理
@@ -149,17 +144,19 @@ void USART1_IRQHandler(void)
 	uint8_t getChar;
 	if(USART_GetFlagStatus(USART1,USART_FLAG_RXNE)){
 		getChar = USART_ReceiveData(USART1);
-//		usart1SendByte(getChar);
+		usart1SendByte(getChar);
 		if(getChar == '0'){//回传温度
 			sendTempData();
 		}else if(getChar == '1'){//开灯
 			isLed = true;
+			isLedNotificating = false;
 		}else if(getChar == '2'){//关灯
 			isLed = false;
+			isLedNotificating = false;
+			isLedNotification = false;
 		}else if(getChar == '3'){//LED通知闪烁
 			isLedNotification = true;
 			isLedNotificating = false;
-			ledNotificationLeft = 5;
 		}else if(getChar == 'a'){//按摩等级1
 			isMassage = true;
 			massageFrequency = 2;
@@ -180,7 +177,7 @@ void USART1_IRQHandler(void)
 			massageFrequency = 0;
 			setMassageState(false);
 		}else if(getChar == '6'){//消息通知
-			isNotification = true;
+ 			isNotification = true;
 			isNotificating = false;
 			notificationViberaLeft = 5;
 			notificationFrequency = 8;

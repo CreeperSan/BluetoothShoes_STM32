@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\Shoes.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Shoes.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Fri May 26 20:43:31 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Wed May 31 10:28:22 2017
 <BR><P>
 <H3>Maximum Stack Usage =        132 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -639,44 +639,44 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rheostat_ADC_GPIO_Config
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsInput
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initWarm
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initNotification
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initMassage
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initLed
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsOutput
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initBuzzer
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsInput
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initWarm
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initNotification
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initMassage
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initLed
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsOutput
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initBuzzer
 </UL>
 
-<P><STRONG><a name="[b0]"></a>GPIO_PinAFConfig</STRONG> (Thumb, 70 bytes, Stack size 20 bytes, stm32f4xx_gpio.o(i.GPIO_PinAFConfig))
+<P><STRONG><a name="[b1]"></a>GPIO_PinAFConfig</STRONG> (Thumb, 70 bytes, Stack size 20 bytes, stm32f4xx_gpio.o(i.GPIO_PinAFConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPIO_PinAFConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
 </UL>
 
-<P><STRONG><a name="[9d]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(i.GPIO_ReadInputDataBit))
-<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getHumiturePinStatus
+<P><STRONG><a name="[9e]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(i.GPIO_ReadInputDataBit))
+<BR><BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getHumiturePinStatus
 </UL>
 
-<P><STRONG><a name="[b7]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(i.GPIO_ResetBits))
-<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setWarmState
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setNotificationState
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setMassageState
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setLedState
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setBuzzerState
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
+<P><STRONG><a name="[b8]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(i.GPIO_ResetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setWarmState
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setNotificationState
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setMassageState
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setLedState
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setBuzzerState
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
 </UL>
 
-<P><STRONG><a name="[a0]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(i.GPIO_SetBits))
-<BR><BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsInput
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setWarmState
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setNotificationState
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setMassageState
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setLedState
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setBuzzerState
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsOutput
+<P><STRONG><a name="[a1]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(i.GPIO_SetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsInput
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setWarmState
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setNotificationState
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setMassageState
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setLedState
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setBuzzerState
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsOutput
 </UL>
 
 <P><STRONG><a name="[4]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.HardFault_Handler))
@@ -688,16 +688,16 @@ Global Symbols
 <P><STRONG><a name="[3]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.NMI_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f429_439xx.o(RESET)
 </UL>
-<P><STRONG><a name="[ab]"></a>NVIC_Init</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, misc.o(i.NVIC_Init))
+<P><STRONG><a name="[ac]"></a>NVIC_Init</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, misc.o(i.NVIC_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = NVIC_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
 </UL>
 
-<P><STRONG><a name="[aa]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, misc.o(i.NVIC_PriorityGroupConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
+<P><STRONG><a name="[ab]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, misc.o(i.NVIC_PriorityGroupConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
 </UL>
 
 <P><STRONG><a name="[a]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.PendSV_Handler))
@@ -706,28 +706,28 @@ Global Symbols
 <P><STRONG><a name="[80]"></a>RCC_AHB1PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd))
 <BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rheostat_ADC_Mode_Config
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rheostat_ADC_GPIO_Config
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initWarm
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initNotification
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initMassage
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initLed
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureClock
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initBuzzer
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initWarm
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initNotification
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initMassage
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initLed
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureClock
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initBuzzer
 </UL>
 
-<P><STRONG><a name="[a9]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
+<P><STRONG><a name="[aa]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
 </UL>
 
 <P><STRONG><a name="[85]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd))
 <BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rheostat_ADC_Mode_Config
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
 </UL>
 
-<P><STRONG><a name="[99]"></a>RCC_GetClocksFreq</STRONG> (Thumb, 214 bytes, Stack size 20 bytes, stm32f4xx_rcc.o(i.RCC_GetClocksFreq))
+<P><STRONG><a name="[9a]"></a>RCC_GetClocksFreq</STRONG> (Thumb, 214 bytes, Stack size 20 bytes, stm32f4xx_rcc.o(i.RCC_GetClocksFreq))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = RCC_GetClocksFreq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
 </UL>
 
 <P><STRONG><a name="[8d]"></a>Rheostat_Init</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, adc.o(i.Rheostat_Init))
@@ -765,12 +765,12 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f429_439xx.o(RESET)
 </UL>
 <P><STRONG><a name="[91]"></a>TIM_ClearFlag</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_tim.o(i.TIM_ClearFlag))
-<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
+<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM6_DAC_IRQHandler
 </UL>
 
-<P><STRONG><a name="[ae]"></a>TIM_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f4xx_tim.o(i.TIM_Cmd))
-<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
+<P><STRONG><a name="[af]"></a>TIM_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f4xx_tim.o(i.TIM_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
 </UL>
 
 <P><STRONG><a name="[90]"></a>TIM_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, stm32f4xx_tim.o(i.TIM_GetITStatus))
@@ -779,48 +779,50 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM6_DAC_IRQHandler
 </UL>
 
-<P><STRONG><a name="[ad]"></a>TIM_ITConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f4xx_tim.o(i.TIM_ITConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
+<P><STRONG><a name="[ae]"></a>TIM_ITConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f4xx_tim.o(i.TIM_ITConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
 </UL>
 
-<P><STRONG><a name="[ac]"></a>TIM_TimeBaseInit</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, stm32f4xx_tim.o(i.TIM_TimeBaseInit))
-<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
+<P><STRONG><a name="[ad]"></a>TIM_TimeBaseInit</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, stm32f4xx_tim.o(i.TIM_TimeBaseInit))
+<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
 </UL>
 
-<P><STRONG><a name="[31]"></a>USART1_IRQHandler</STRONG> (Thumb, 272 bytes, Stack size 8 bytes, main.o(i.USART1_IRQHandler))
+<P><STRONG><a name="[31]"></a>USART1_IRQHandler</STRONG> (Thumb, 286 bytes, Stack size 8 bytes, main.o(i.USART1_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = USART1_IRQHandler &rArr; sendTempData &rArr; usart1SendString &rArr; usart1SendByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setWarmState
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setMassageState
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setBuzzerState
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendByte
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setWarmState
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setMassageState
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setBuzzerState
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ReceiveData
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetFlagStatus
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendTempData
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendTempData
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f429_439xx.o(RESET)
 </UL>
-<P><STRONG><a name="[b2]"></a>USART_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f4xx_usart.o(i.USART_Cmd))
-<BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
+<P><STRONG><a name="[b3]"></a>USART_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f4xx_usart.o(i.USART_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[92]"></a>USART_GetFlagStatus</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f4xx_usart.o(i.USART_GetFlagStatus))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendString
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendByte
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendString
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendByte
 <LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[b1]"></a>USART_ITConfig</STRONG> (Thumb, 74 bytes, Stack size 20 bytes, stm32f4xx_usart.o(i.USART_ITConfig))
+<P><STRONG><a name="[b2]"></a>USART_ITConfig</STRONG> (Thumb, 74 bytes, Stack size 20 bytes, stm32f4xx_usart.o(i.USART_ITConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = USART_ITConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
 </UL>
 
-<P><STRONG><a name="[98]"></a>USART_Init</STRONG> (Thumb, 204 bytes, Stack size 48 bytes, stm32f4xx_usart.o(i.USART_Init))
+<P><STRONG><a name="[99]"></a>USART_Init</STRONG> (Thumb, 204 bytes, Stack size 48 bytes, stm32f4xx_usart.o(i.USART_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = USART_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
 </UL>
 
 <P><STRONG><a name="[93]"></a>USART_ReceiveData</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_usart.o(i.USART_ReceiveData))
@@ -828,7 +830,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ba]"></a>USART_SendData</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f4xx_usart.o(i.USART_SendData))
-<BR><BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendByte
+<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendByte
 </UL>
 
 <P><STRONG><a name="[7]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.UsageFault_Handler))
@@ -838,16 +840,16 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
 </UL>
 
-<P><STRONG><a name="[9a]"></a>delay_us</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, delay.o(i.delay_us))
+<P><STRONG><a name="[9b]"></a>delay_us</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, delay.o(i.delay_us))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = delay_us &rArr; delayUs
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delayUs
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delayUs
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumitureByte
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
 </UL>
 
-<P><STRONG><a name="[9e]"></a>initBuzzer</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, buzzer.o(i.initBuzzer))
+<P><STRONG><a name="[9f]"></a>initBuzzer</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, buzzer.o(i.initBuzzer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = initBuzzer &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
@@ -856,26 +858,26 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[9f]"></a>initHumitureAsInput</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, humiture.o(i.initHumitureAsInput))
+<P><STRONG><a name="[a0]"></a>initHumitureAsInput</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, humiture.o(i.initHumitureAsInput))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = initHumitureAsInput &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
 </UL>
 
-<P><STRONG><a name="[a1]"></a>initHumitureAsOutput</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, humiture.o(i.initHumitureAsOutput))
+<P><STRONG><a name="[a2]"></a>initHumitureAsOutput</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, humiture.o(i.initHumitureAsOutput))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = initHumitureAsOutput &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a2]"></a>initHumitureClock</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, humiture.o(i.initHumitureClock))
+<P><STRONG><a name="[a3]"></a>initHumitureClock</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, humiture.o(i.initHumitureClock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = initHumitureClock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
@@ -883,7 +885,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a3]"></a>initLed</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, led.o(i.initLed))
+<P><STRONG><a name="[a4]"></a>initLed</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, led.o(i.initLed))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = initLed &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
@@ -892,7 +894,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a4]"></a>initMassage</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, viberate.o(i.initMassage))
+<P><STRONG><a name="[a5]"></a>initMassage</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, viberate.o(i.initMassage))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = initMassage &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
@@ -901,7 +903,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a5]"></a>initNotification</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, viberate.o(i.initNotification))
+<P><STRONG><a name="[a6]"></a>initNotification</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, viberate.o(i.initNotification))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = initNotification &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
@@ -910,45 +912,45 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a6]"></a>initSystemTick</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, delay.o(i.initSystemTick))
+<P><STRONG><a name="[a7]"></a>initSystemTick</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, delay.o(i.initSystemTick))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = initSystemTick &rArr; usart1SendString &rArr; usart1SendByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendString
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendString
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a8]"></a>initTimTwinkle</STRONG> (Thumb, 96 bytes, Stack size 24 bytes, tim.o(i.initTimTwinkle))
+<P><STRONG><a name="[a9]"></a>initTimTwinkle</STRONG> (Thumb, 96 bytes, Stack size 24 bytes, tim.o(i.initTimTwinkle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = initTimTwinkle &rArr; NVIC_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimeBaseInit
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimeBaseInit
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearFlag
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[af]"></a>initUSART1</STRONG> (Thumb, 178 bytes, Stack size 32 bytes, uart.o(i.initUSART1))
+<P><STRONG><a name="[b0]"></a>initUSART1</STRONG> (Thumb, 178 bytes, Stack size 32 bytes, uart.o(i.initUSART1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = initUSART1 &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ITConfig
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ITConfig
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b3]"></a>initWarm</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, warm.o(i.initWarm))
+<P><STRONG><a name="[b4]"></a>initWarm</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, warm.o(i.initWarm))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = initWarm &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
@@ -957,120 +959,120 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[77]"></a>main</STRONG> (Thumb, 358 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[77]"></a>main</STRONG> (Thumb, 346 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = main &rArr; Rheostat_Init &rArr; Rheostat_ADC_Mode_Config &rArr; ADC_RegularChannelConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendString
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setNotificationState
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setMassageState
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setLedState
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setBuzzerState
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initWarm
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initSystemTick
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initNotification
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initMassage
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initLed
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureClock
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsOutput
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initBuzzer
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendString
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setNotificationState
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setMassageState
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setLedState
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setBuzzerState
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initWarm
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUSART1
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimTwinkle
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initSystemTick
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initNotification
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initMassage
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initLed
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureClock
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsOutput
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initBuzzer
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rheostat_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[b5]"></a>readHumiture</STRONG> (Thumb, 272 bytes, Stack size 24 bytes, humiture.o(i.readHumiture))
+<P><STRONG><a name="[b6]"></a>readHumiture</STRONG> (Thumb, 266 bytes, Stack size 24 bytes, humiture.o(i.readHumiture))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = readHumiture &rArr; initHumitureAsInput &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsInput
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsInput
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumitureByte
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getHumiturePinStatus
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendByte
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsOutput
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getHumiturePinStatus
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initHumitureAsOutput
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[94]"></a>sendTempData</STRONG> (Thumb, 342 bytes, Stack size 8 bytes, main.o(i.sendTempData))
+<P><STRONG><a name="[95]"></a>sendTempData</STRONG> (Thumb, 342 bytes, Stack size 8 bytes, main.o(i.sendTempData))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = sendTempData &rArr; usart1SendString &rArr; usart1SendByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendString
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendByte
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendString
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendByte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[96]"></a>setBuzzerState</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, buzzer.o(i.setBuzzerState))
+<P><STRONG><a name="[97]"></a>setBuzzerState</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, buzzer.o(i.setBuzzerState))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = setBuzzerState
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[b4]"></a>setLedState</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, led.o(i.setLedState))
+<P><STRONG><a name="[b5]"></a>setLedState</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, led.o(i.setLedState))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = setLedState
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[95]"></a>setMassageState</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, viberate.o(i.setMassageState))
+<P><STRONG><a name="[96]"></a>setMassageState</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, viberate.o(i.setMassageState))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = setMassageState
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[b6]"></a>setNotificationState</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, viberate.o(i.setNotificationState))
+<P><STRONG><a name="[b7]"></a>setNotificationState</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, viberate.o(i.setNotificationState))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = setNotificationState
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[97]"></a>setWarmState</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, warm.o(i.setWarmState))
+<P><STRONG><a name="[98]"></a>setWarmState</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, warm.o(i.setWarmState))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = setWarmState
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[b8]"></a>usart1SendByte</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, uart.o(i.usart1SendByte))
+<P><STRONG><a name="[94]"></a>usart1SendByte</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, uart.o(i.usart1SendByte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart1SendByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendData
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetFlagStatus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendString
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendTempData
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendString
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendTempData
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[a7]"></a>usart1SendString</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, uart.o(i.usart1SendString))
+<P><STRONG><a name="[a8]"></a>usart1SendString</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, uart.o(i.usart1SendString))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = usart1SendString &rArr; usart1SendByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendByte
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart1SendByte
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetFlagStatus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initSystemTick
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendTempData
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initSystemTick
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendTempData
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1085,28 +1087,28 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[9c]"></a>getHumiturePinStatus</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, humiture.o(i.getHumiturePinStatus))
+<P><STRONG><a name="[9d]"></a>getHumiturePinStatus</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, humiture.o(i.getHumiturePinStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = getHumiturePinStatus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumitureByte
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
 </UL>
 
 <P><STRONG><a name="[b9]"></a>readHumitureByte</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, humiture.o(i.readHumitureByte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = readHumitureByte &rArr; delay_us &rArr; delayUs
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getHumiturePinStatus
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getHumiturePinStatus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readHumiture
 </UL>
 
-<P><STRONG><a name="[9b]"></a>delayUs</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, delay.o(i.delayUs))
+<P><STRONG><a name="[9c]"></a>delayUs</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, delay.o(i.delayUs))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = delayUs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 </UL>
 
 <P><STRONG><a name="[7f]"></a>Rheostat_ADC_GPIO_Config</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, adc.o(i.Rheostat_ADC_GPIO_Config))
